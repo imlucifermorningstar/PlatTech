@@ -26,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.login_button);
 
         // Set onClickListener for login button
+
         loginButton.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 // Check if username and password are correct
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Start sign up activity
+
                 Intent intent = new Intent(MainActivity.this, SignUp.class);
                 startActivity(intent);
             }

@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/pastel1">
 
 
     <EditText
@@ -14,9 +15,9 @@
         android:layout_marginTop="266dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="420dp"
+        android:drawableLeft="@drawable/baseline_person_24"
         android:ems="10"
         android:hint="username"
-        android:drawableLeft="@drawable/baseline_person_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,9 +31,9 @@
         android:layout_marginTop="332dp"
         android:layout_marginEnd="101dp"
         android:layout_marginBottom="353dp"
+        android:drawableLeft="@drawable/baseline_security_24"
         android:ems="10"
         android:hint="password"
-        android:drawableLeft="@drawable/baseline_security_24"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,12 +42,12 @@
 
     <Button
         android:id="@+id/login_button"
-        android:layout_width="192dp"
-        android:layout_height="42dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:layout_marginStart="109dp"
-        android:layout_marginTop="406dp"
+        android:layout_marginTop="414dp"
         android:layout_marginEnd="110dp"
-        android:layout_marginBottom="283dp"
+        android:layout_marginBottom="275dp"
         android:text="Login"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,16 +58,30 @@
         android:id="@+id/signup_link"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="95dp"
-        android:layout_marginTop="693dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="682dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="27dp"
         android:text="Don't have an account? Sign up"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="131dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="499dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
