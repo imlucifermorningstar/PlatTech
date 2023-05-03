@@ -34,9 +34,10 @@ public class MainActivity extends AppCompatActivity {
                 String password = passwordEditText.getText().toString();
                 if (username.equals("user1") && password.equals("123")) {
                     // Start main activity
-                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                    Intent intent = new Intent(MainActivity.this, HomePage.class);
                     startActivity(intent);
                     finish();
+
                 } else {
                     // Show error message
                     Toast.makeText(MainActivity.this, "Incorrect username or password", Toast.LENGTH_SHORT).show();
