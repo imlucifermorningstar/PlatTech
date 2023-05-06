@@ -18,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
         setContentView(R.layout.activity_main);
 
         // Find views
@@ -36,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 String password = passwordEditText.getText().toString();
                 if (username.equals("user1") && password.equals("123")) {
                     // Start main activity
-                    Intent intent = new Intent(MainActivity.this, HomePage.class);
+                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
                     startActivity(intent);
                     finish();
 
