@@ -74,70 +74,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
+        app:layout_constraintGuide_begin="16dp" />
 
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="293dp"
-        android:layout_height="29dp"
-        android:background="@color/pastel1"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Email: nathanielorayt@gmail.com"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="478dp" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="216dp"
-        android:layout_height="37dp"
-        android:background="@color/pastel1"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:text="Password123"
-
-        android:textColor="@color/black"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="517dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="77dp"
-        android:layout_height="37dp"
-        android:background="@color/pastel1"
-        android:paddingLeft="7dp"
-        android:paddingTop="10dp"
-        android:text="PASSWORD"
-        android:textColor="@color/black"
-        android:textSize="12dp"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="517dp" />
-
-    <EditText
-        android:id="@+id/editTextText4"
-        android:layout_width="174dp"
-        android:layout_height="39dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="CONTACT US"
-        android:textSize="10dp"
-        android:textAlignment="center"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="676dp" />
-
-    <EditText
-        android:id="@+id/editTextText6"
-        android:layout_width="208dp"
-        android:layout_height="39dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="ABOUT US"
-        android:textSize="10dp"
-        android:textAlignment="center"
-        tools:layout_editor_absoluteX="190dp"
-        tools:layout_editor_absoluteY="676dp" />
 
     <View
         android:id="@+id/divider"
@@ -145,7 +84,80 @@
         android:layout_height="1dp"
         android:background="?android:attr/listDivider"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="642dp" />
+        tools:layout_editor_absoluteY="601dp" />
+
+    <LinearLayout
+        android:layout_width="351dp"
+        android:layout_height="139dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787">
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="293dp"
+            android:layout_height="29dp"
+            android:background="@color/pastel1"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="Email: nathanielorayt@gmail.com"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="478dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="216dp"
+            android:layout_height="37dp"
+            android:background="@color/pastel1"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:text="Password123"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="517dp" />
+
+        <EditText
+            android:id="@+id/editTextText6"
+            android:layout_width="208dp"
+            android:layout_height="39dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="ABOUT US"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            tools:layout_editor_absoluteX="190dp"
+            tools:layout_editor_absoluteY="612dp" />
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="177dp"
+            android:layout_height="39dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="CONTACT US"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="612dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="77dp"
+            android:layout_height="37dp"
+            android:background="@color/pastel1"
+            android:paddingLeft="7dp"
+            android:paddingTop="10dp"
+            android:text="PASSWORD"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
