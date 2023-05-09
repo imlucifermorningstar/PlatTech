@@ -19,6 +19,7 @@
         android:layout_marginBottom="420dp"
         android:drawableLeft="@drawable/baseline_person_24"
         android:hint="username"
+        android:fontFamily="@font/university"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,8 +37,8 @@
         android:layout_marginEnd="101dp"
         android:layout_marginBottom="353dp"
         android:drawableLeft="@drawable/baseline_security_24"
-        android:ems="10"
         android:hint="password"
+        android:fontFamily="@font/university"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +61,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/university"/>
 
     <TextView
         android:id="@+id/signup_link"
@@ -72,6 +74,7 @@
         android:layout_marginBottom="27dp"
         android:text="Don't have an account? Sign up"
         android:textSize="16sp"
+        android:fontFamily="@font/verily"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,163 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blue"
     tools:context=".ui.dashboard.DashboardFragment">
 
-
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="231dp"
-        android:layout_height="152dp"
-        android:layout_marginTop="111dp"
-        android:layout_marginBottom="54dp"
-        android:src="@drawable/profile1"
-        app:layout_constraintBottom_toTopOf="@+id/textViewName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewHome"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="281dp"
-        android:background="@color/pastel1"
-        android:text="555 Delgado St. Sampaloc Manila"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewNumber" />
-
-    <TextView
-        android:id="@+id/textViewName"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="14dp"
-        android:background="@color/pastel1"
-        android:text="Nathaniel Marquez"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/textViewNumber"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
-    <TextView
-        android:id="@+id/textViewNumber"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="15dp"
-        android:background="@color/pastel1"
-        android:text="09393692019"
-        android:textColor="@color/black"
-        android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/textViewHome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
+        android:id="@+id/profile"
         android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/profile1" />
+
+
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="16dp" />
+        android:text="Name: Nathaniel Marquez"
+        android:textColor="@color/black"
+        android:fontFamily="@font/university"
+        android:gravity="center"
+        android:layout_below="@+id/profile"
+        android:layout_marginTop="20dp"
+        android:id="@+id/name"
+        android:background="#10393646"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:fontFamily="@font/university"
+        android:gravity="center"
+        android:text="Phone Number: 093829302313"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        android:background="#10393646"
+        android:id="@+id/number"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age: 30"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/university"
+        android:layout_below="@+id/number"
+        android:layout_marginTop="20dp"
+        android:background="#10393646"
+        android:id="@+id/age"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="School: Technological Institute of the Philippines"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/university"
+        android:layout_below="@+id/age"
+        android:layout_marginTop="20dp"
+        android:background="#10393646"
+        android:id="@+id/school"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Program: BSIT"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/university"
+        android:layout_below="@+id/school"
+        android:layout_marginTop="20dp"
+        android:background="#10393646"
+        android:id="@+id/course"
+        />
 
 
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="601dp" />
-
-    <LinearLayout
-        android:layout_width="351dp"
-        android:layout_height="139dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787">
-
-        <EditText
-            android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="293dp"
-            android:layout_height="29dp"
-            android:background="@color/pastel1"
-            android:ems="10"
-            android:inputType="textEmailAddress"
-            android:text="Email: nathanielorayt@gmail.com"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            tools:layout_editor_absoluteX="59dp"
-            tools:layout_editor_absoluteY="478dp" />
-
-        <EditText
-            android:id="@+id/editTextTextPassword"
-            android:layout_width="216dp"
-            android:layout_height="37dp"
-            android:background="@color/pastel1"
-            android:ems="10"
-            android:inputType="textPassword"
-            android:text="Password123"
-            android:textColor="@color/black"
-            tools:layout_editor_absoluteX="136dp"
-            tools:layout_editor_absoluteY="517dp" />
-
-        <EditText
-            android:id="@+id/editTextText6"
-            android:layout_width="208dp"
-            android:layout_height="39dp"
-            android:ems="10"
-            android:inputType="text"
-            android:text="ABOUT US"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="10dp"
-            tools:layout_editor_absoluteX="190dp"
-            tools:layout_editor_absoluteY="612dp" />
-
-        <EditText
-            android:id="@+id/editTextText4"
-            android:layout_width="177dp"
-            android:layout_height="39dp"
-            android:ems="10"
-            android:inputType="text"
-            android:text="CONTACT US"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="10dp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="612dp" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="77dp"
-            android:layout_height="37dp"
-            android:background="@color/pastel1"
-            android:paddingLeft="7dp"
-            android:paddingTop="10dp"
-            android:text="PASSWORD"
-            android:textColor="@color/black"
-            android:textSize="12dp" />
-    </LinearLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

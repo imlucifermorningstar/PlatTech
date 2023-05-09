@@ -9,5 +9,8 @@
     <color name="cool">#188FCF</color>
     <color name="warm">#F1D416</color>
     <color name="pastel1">#FFF2CC</color>
+    <color name="gray">#DBDBD0</color>
+    <color name="blue">#F6F1F1</color>
+    <color name="gray1">#9BA4B5</color>
 
 </resources>
