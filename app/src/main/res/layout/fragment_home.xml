@@ -79,10 +79,10 @@
         android:id="@+id/location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/university"
         android:gravity="center_horizontal"
         android:text="Current Location"
-        android:fontFamily="@font/university"
-        android:layout_marginTop="180dp"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold" />

@@ -80,10 +80,20 @@
         android:fontFamily="@font/university"
         android:layout_below="@+id/school"
         android:layout_marginTop="20dp"
-            android:background="#808080"
+        android:background="#808080"
         android:id="@+id/course"
         />
-
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROFILE"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:fontFamily="@font/university"
+        android:layout_below="@+id/school"
+        android:layout_marginTop="-520dp"
+        android:id="@+id/profile2"
+        />
 
 </RelativeLayout>
