@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/borderr">
+    android:background="@color/white"
+    android:foreground="@drawable/bordeeer">
 
 
     <EditText
@@ -105,9 +106,11 @@
         android:layout_height="232dp"
         android:alpha="0.1"
         app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="19dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="19dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 

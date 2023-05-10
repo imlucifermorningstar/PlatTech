@@ -29,6 +29,7 @@
         android:layout_marginTop="49dp"
         android:background="#808080"
         android:fontFamily="@font/kadwa_bold"
+
         android:gravity="center"
         android:text="Name: Nathaniel Marquez"
         android:textColor="@color/black" />
