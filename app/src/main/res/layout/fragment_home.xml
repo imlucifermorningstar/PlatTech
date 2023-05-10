@@ -5,18 +5,81 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
+    android:id="@+id/frame_layout"
     tools:context=".ui.home.HomeFragment">
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Location"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:id="@+id/location"
+        />
     <Button
-        android:id="@+id/button1"
-        android:layout_width="171dp"
-        android:layout_height="73dp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="221dp"
         android:text="Emergency"
-        android:textSize="18sp" />
+        android:layout_marginBottom="80dp"
+        android:layout_marginStart="90dp"
+        android:textSize="22sp"
+        android:backgroundTint="@color/black"
+        android:id="@+id/bt_location"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude"
+        android:layout_marginLeft="140dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/location"
+        android:layout_marginTop="30dp"
+        android:id="@+id/latitude"
+        />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_latitude"
+        android:text="0.0"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/latitude"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="180dp"
+        />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tv_latitude"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="125dp"
+        android:id="@+id/longitude"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_longitude"
+        android:text="0.0"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/longitude"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="180dp"
+        />
 </RelativeLayout>
