@@ -28,36 +28,34 @@
         android:layout_below="@+id/profile"
         android:layout_marginTop="49dp"
         android:background="#808080"
-        android:fontFamily="@font/university"
+        android:fontFamily="@font/kadwa_bold"
         android:gravity="center"
         android:text="Name: Nathaniel Marquez"
         android:textColor="@color/black" />
 
     <TextView
+        android:id="@+id/number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:fontFamily="@font/university"
-        android:gravity="center"
-        android:text="Phone Number: 093829302313"
         android:layout_below="@+id/name"
         android:layout_marginTop="20dp"
         android:background="#808080"
-        android:id="@+id/number"
-        />
+        android:fontFamily="@font/kadwa_bold"
+        android:gravity="center"
+        android:text="Phone Number: 093829302313"
+        android:textColor="@color/black" />
 
     <TextView
+        android:id="@+id/age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Age: 30"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:fontFamily="@font/university"
         android:layout_below="@+id/number"
         android:layout_marginTop="20dp"
         android:background="#808080"
-        android:id="@+id/age"
-        />
+        android:fontFamily="@font/kadwa_bold"
+        android:gravity="center"
+        android:text="Age: 30"
+        android:textColor="@color/black" />
 
     <TextView
         android:id="@+id/school"
@@ -66,34 +64,33 @@
         android:layout_below="@+id/age"
         android:layout_marginTop="19dp"
         android:background="#808080"
-        android:fontFamily="@font/university"
+        android:fontFamily="@font/kadwa_bold"
         android:gravity="center"
         android:text="School: Technological Institute of the Philippines"
         android:textColor="@color/black" />
 
     <TextView
+        android:id="@+id/course"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Program: BSIT"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:fontFamily="@font/university"
         android:layout_below="@+id/school"
         android:layout_marginTop="20dp"
         android:background="#808080"
-        android:id="@+id/course"
-        />
+        android:fontFamily="@font/kadwa_bold"
+        android:gravity="center"
+        android:text="Program: BSIT"
+        android:textColor="@color/black" />
+
     <TextView
+        android:id="@+id/profile2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PROFILE"
-        android:gravity="center"
-        android:textColor="@color/black"
-        android:textSize="30dp"
-        android:fontFamily="@font/university"
         android:layout_below="@+id/school"
         android:layout_marginTop="-520dp"
-        android:id="@+id/profile2"
-        />
+        android:fontFamily="@font/kadwa_bold"
+        android:gravity="center"
+        android:text="PROFILE"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
 
 </RelativeLayout>
