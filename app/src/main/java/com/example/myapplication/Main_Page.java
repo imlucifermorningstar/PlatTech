@@ -22,6 +22,12 @@ public class Main_Page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
 
+        Fragment fragment = new Fragment();
+
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.frame_layout,fragment)
+                .commit();
 
         binding = ActivityMainPageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -37,7 +43,7 @@ public class Main_Page extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-        Fragment fragment = new Fragment();
+
 
 
     }
