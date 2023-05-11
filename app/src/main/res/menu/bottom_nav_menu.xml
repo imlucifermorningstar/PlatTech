@@ -4,19 +4,13 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="Home"/>
+        android:title="Home" />
 
     <item
         android:id="@+id/navigation_dashboard"
         android:icon="@drawable/baseline_person_24"
         android:title="Profile"
-        android:visible="true" />
+        android:visible="true"/>
 
-    <item
-
-        android:id="@+id/navigation_notifications"
-        android:icon="@drawable/baseline_settings_24"
-        android:title="Settings"
-        android:visible="false" />
 
 </menu>

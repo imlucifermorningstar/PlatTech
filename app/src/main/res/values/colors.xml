@@ -13,5 +13,7 @@
     <color name="blue">#F6F1F1</color>
     <color name="gray1">#9BA4B5</color>
     <color name="red">#FAA0A0</color>
+    <color name="action">#8b0000</color>
+
 
 </resources>
